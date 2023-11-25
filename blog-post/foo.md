@@ -1,0 +1,7 @@
+# foo
+```js
+function bla() {
+
+}
+
+```
