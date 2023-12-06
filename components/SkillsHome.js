@@ -1,68 +1,72 @@
 // import '../App.css'
-import assetsURLs from './Constants'
+import assetsURLs from "./Constants"
+import Image from "next/image"
 
 export default function SkillsHome() {
   const { htmlIcon, cssIcon, javascriptIcon, reactIcon, nextIcon, reduxIcon } = assetsURLs
 
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-12">
-          <h1>Skills</h1>
-        </div>
+    <div className="skillsHome__container">
+      <div className="skillsHome__title">
+        <h1>Skills</h1>
       </div>
-      <div className="row">
-        <div className="col-12">
-          <div
-            className="service-box-single-item swiper-slide swiper-slide-next"
-            role="group"
-            aria-label="5 / 9"
-            style={{ width: '352px', marginRight: '45px' }}
-            data-swiper-slide-index="1"
-          >
-            <div className="inner-shape inner-shape-top-right" />
-            <div className="icon">
-              <img src="/service-icon-2.webp" alt="service Icon" />
-            </div>
-            <h4 className="title">Development </h4>
-          </div>
-        </div>
+      <div className="skillsHome__coding-icon">
+        <Image
+          src="/images/coding-icon.webp"
+          className="skillsHome__download-icon"
+          width={150}
+          height={150}
+          alt="coding-icon"
+        />
       </div>
-      <div className="row">
-        <div className="col-12 d-flex justify-content-center">
-          <div className="gray-box text-center">
-            <img className="skills_img" src={htmlIcon} alt="html icon" />
-            <p>HTML</p>
-          </div>
-          <div className="gray-box text-center">
-            <img className="skills_img" src={cssIcon} alt="css icon" />
-            <p>CSS</p>
-          </div>
-          <div className="gray-box text-center">
-            <img className="skills_img" src={javascriptIcon} alt="js icon" />
-            <p>JavaScript</p>
-          </div>
-        </div>
+      <h4 className="skillsHome__title">Development </h4>
+      <div className="skillsHome__col-12">
+        <Image
+            src={htmlIcon}
+            width={150}
+            height={150}
+            alt="html icon"
+          />
+          <p>HTML</p>
+        <Image
+          src={cssIcon}
+          width={150}
+          height={150}
+          alt="css icon"
+        />
+        <p>CSS</p>
+        <Image
+          src={javascriptIcon}
+          width={150}
+          height={150}
+          alt="js icon"
+        />
+        <p>JavaScript</p>
       </div>
-      <div className="row">
-        <div className="col-12 d-flex justify-content-center">
-          <div className="gray-box text-center">
-            <img className="skills_img" src={reactIcon} alt="react icon" />
-            <p>React</p>
-          </div>
-          <div className="gray-box text-center">
-            <img className="skills_img" src={reduxIcon} alt="redux icon" />
-            <p>Redux</p>
-          </div>
-        </div>
+      <div className="skillsHome__col-12">
+          <Image
+            src={reactIcon}
+            width={150}
+            height={150}
+            alt="react icon"
+          />
+          <p>React</p>
+          <Image
+            src={reduxIcon}
+            width={150}
+            height={150}
+            alt="redux icon"
+          />
+          <p>Redux</p>
       </div>
-      <div className="row">
-        <div className="col-12 d-flex justify-content-center">
-          <div className="gray-box text-center">
-            <img className="skills_img" src={nextIcon} alt="next icon" />
-            <p>Next.js</p>
-          </div>
-        </div>
+      <div className="skillsHome__col-12">
+          <Image
+            src={nextIcon}
+            width={150}
+            height={150}
+            alt="next icon"
+          />
+          <p>Next.js</p>
       </div>
     </div>
   )

@@ -1,20 +1,18 @@
 import ListGroup from "react-bootstrap/ListGroup"
 import assetsURLs from "../../components/Constants"
+import Image from "next/image"
 
 export default function BlogIndex() {
   const { javascriptIcon } = assetsURLs
 
   return (
-    <div className="project-details-section section-gap-tb-165">
-      <div className="project-details-box">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="project-content-section pos-relative">
+    <div className="index__blog-container">
                 <div className="project-hero-image">
-                  <img
+                  <Image
                     src={javascriptIcon}
-                    alt=""
+                    width={150}
+                    height={150}
+                    alt="js icon"
                   />
                 </div>
 
@@ -156,11 +154,8 @@ export default function BlogIndex() {
                     </ListGroup.Item>
                   </ListGroup>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              
+      
     </div>
   )
 }
