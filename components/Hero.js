@@ -1,30 +1,37 @@
+import Image from "next/image"
 // import '../App.css'
 
 export default function Hero() {
   return (
-    <div className="hero-wrapper">
-      <div className="container">
-        <div className="row">
-          <div className="col-7">
-            <div className="breadcrumb-content">
-              <h2 className="title">Home</h2>
-            </div>
-            <div className="hero-content">
-              <h3 className="title-big">Hello! I&apos;m</h3>
-              <h2 className="title-large">
-                Mónica <span className="shape-mark">López</span>
-              </h2>
-              <p>Software developer &amp; Frontend</p>
-              <a href="#resume" className="btn btn-dark">
-                Get Resume <i className="icofont-download" />
-              </a>
-            </div>
-          </div>
-          <div className="col-5">
-            <img className="img-fluid" src="/me.png" alt="me" />
-          </div>
-        </div>
-      </div>
+    <div className="hero__wrapper">
+      <h2 className="hero__title">Home</h2>
+        <div className="hero__content">
+          <h3 className="hero__preheadline">Hello! I&apos;m</h3>
+          <h2 className="hero__headline">
+            Mónica López
+          </h2>
+          <p>Software developer &amp; Frontend</p>
+          <button
+            href="#resume"
+            className="hero__download-button">
+            Get Resume 
+            <Image src='/images/download.png' 
+            className="hero__download-icon" 
+            width={15}
+            height={15}
+            alt="Me" />
+          </button>
+         
+        <div className="hero__portrait">
+            <Image
+              className="hero__image"
+              src="/images/me.png"
+              width={200}
+              height={200}
+              alt="Me"
+            />
+        </div>  
+        </div>    
     </div>
   )
 }

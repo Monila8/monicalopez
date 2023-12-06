@@ -11,7 +11,7 @@ export default function Home() {
         <title>Portfolio - Mónica López</title>
         <meta
           name="description"
-          content="Porfolio Monica López 2023"
+          content="Portfolio Monica López 2023"
         />
         <meta
           name="viewport"
