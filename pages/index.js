@@ -3,6 +3,8 @@ import styles from "@/styles/Home.module.css"
 import Navbar from "@/components/Navbar"
 import Hero from "@/components/Hero"
 import SkillsHome from "@/components/SkillsHome"
+import Footer from "@/components/Footer"
+
 
 export default function Home() {
   return (
@@ -26,6 +28,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <SkillsHome />
+        <Footer />
       </main>
     </>
   )

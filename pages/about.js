@@ -2,6 +2,7 @@ import Tab from "react-bootstrap/Tab"
 import Tabs from "react-bootstrap/Tabs"
 import Navbar from "../components/Navbar"
 import Image from "next/image"
+import Footer from "@/components/Footer"
 // import '../App.css'
 
 export default function About() {
@@ -147,7 +148,7 @@ export default function About() {
                   <span className="about__projects-year">2023</span>
                   <h3 className="about__projects-title">@App Tiempo</h3>
                   <Image
-                    src="/images/AppTiempo.jpg"
+                    src="/images/appTiempo.jpg"
                     className="about__appTiempo-image"
                     width={250}
                     height={150}
@@ -159,7 +160,7 @@ export default function About() {
                   <span className="about__projects-year">2023</span>
                   <h3 className="about__projects-title">Memorym game</h3>
                   <Image
-                    src="/images/Memorym.jpg"
+                    src="/images/memorym.jpg"
                     className="about__appTiempo-image"
                     width={250}
                     height={150}
@@ -172,6 +173,7 @@ export default function About() {
           </div>
         </Tab>
       </Tabs>
+      <Footer />
     </div>
   )
 }

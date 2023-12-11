@@ -2,6 +2,7 @@ import ListGroup from "react-bootstrap/ListGroup"
 import Navbar from "../../components/Navbar"
 import assetsURLs from "../../components/Constants"
 import Image from "next/image"
+import Footer from "@/components/Footer"
 
 export default function BlogIndex() {
   const { javascriptIcon } = assetsURLs
@@ -85,6 +86,7 @@ export default function BlogIndex() {
                 in real-time and debug your code. The console is useful for understanding how your
                 code interacts with the browser and for identifying potential errors.
               </p>
+              <p>If you need more information *link to javascript documentation*</p>
             </li>
           </ul>
         </div>
@@ -126,6 +128,7 @@ export default function BlogIndex() {
           </ListGroup.Item>
         </ListGroup>
       </div>
+      <Footer />
     </div>
   )
 }
