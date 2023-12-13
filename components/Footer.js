@@ -4,8 +4,8 @@ import Image from "next/image"
 export default function Footer() {
   return (
     <div className="footer__wrapper">
+      <h2>Contact</h2>
       <p className="footer__text">
-        <h2>Contact</h2>
         <Image
           src="/images/phone-icon.png"
           width={150}

@@ -166,7 +166,9 @@ export default function About() {
                     height={150}
                     alt="Memorym"
                   />
-                  <p className="about__memorym-description">Description Memorym game. *Link to play*</p>
+                  <p className="about__memorym-description">
+                    Description Memorym game. *Link to play*
+                  </p>
                 </div>
               </li>
             </ul>
