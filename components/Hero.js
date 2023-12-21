@@ -27,8 +27,8 @@ export default function Hero() {
           <Image
             className="hero__image"
             src="/images/me.png"
-            width={300}
-            height={500}
+            width={400}
+            height={600}
             alt="Me"
           />
         </div>

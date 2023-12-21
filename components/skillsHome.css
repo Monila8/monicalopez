@@ -1,3 +1,8 @@
 .skillsHome__container {
-    color:blueviolet;
+    color:#fff;
+}
+
+.skillsHome__col-12 {
+  display: flex;
+  justify-content: center;
 }

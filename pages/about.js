@@ -41,7 +41,8 @@ export default function About() {
         className="about__about-navbar">
         <Tab
           eventKey="education"
-          title="Education">
+          title="Education"
+          className="about__about-title">
           <div
             className="about__education"
             id="education-tab"
@@ -50,43 +51,55 @@ export default function About() {
               <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2023</span>
-                  <h3 className="about__education-title">
+                  <h4 className="about__education-title">
                     The Coding Interview Bootcamp: Algorithms + Data Structures
-                  </h3>
+                  </h4>
                   <span className="about__institute-name">Udemy</span>
                 </div>
+              </li>
+              <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2023</span>
-                  <h3 className="about__education-title">
+                  <h4 className="about__education-title">
                     Technical Test: Frontend Development with JavaScript
-                  </h3>
+                  </h4>
                   <span className="about__institute-name">Platzi</span>
                 </div>
+              </li>
+              <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2023</span>
-                  <h3 className="about__education-title">Modern React with Redux</h3>
+                  <h4 className="about__education-title">Modern React with Redux</h4>
                   <span className="about__institute-name">Udemy</span>
                 </div>
+              </li>
+              <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2022</span>
-                  <h3 className="about__education-title">
+                  <h4 className="about__education-title">
                     Bachelor&apos;s Degree in Industrial Engineering
-                  </h3>
+                  </h4>
                   <span className="about__institute-name">University of Antioquia</span>
                 </div>
+              </li>
+              <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2022</span>
-                  <h3 className="about__education-title">Practical JavaScript Course</h3>
+                  <h4 className="about__education-title">Practical JavaScript Course</h4>
                   <span className="about__institute-name">Platzi</span>
                 </div>
+              </li>
+              <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2022</span>
-                  <h3 className="about__education-title">The Modern Javascript Bootcamp Course</h3>
+                  <h4 className="about__education-title">The Modern Javascript Bootcamp Course</h4>
                   <span className="about__institute-name">Udemy</span>
                 </div>
+              </li>
+              <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2020</span>
-                  <h3 className="about__education-title">Diploma HSEQ</h3>
+                  <h4 className="about__education-title">Diploma HSEQ</h4>
                   <span className="about__institute-name">University of Antioquia</span>
                 </div>
               </li>
@@ -104,7 +117,7 @@ export default function About() {
               <li className="about__experience-list">
                 <div className="about__experience-content">
                   <span className="about__experience-year">2023</span>
-                  <h3 className="about__experience-title">Web UI Developer</h3>
+                  <h4 className="about__experience-title">Web UI Developer</h4>
                   <span className="about__experience-institute-name">@App Tiempo</span>
                   <p>
                     Contributed to the development and maintenance of responsive web applications
@@ -119,7 +132,7 @@ export default function About() {
               <li className="about__experience-list">
                 <div className="about__experience-content">
                   <span className="about__experience-year">2015 - 2022</span>
-                  <h3 className="about__experience-title">Administrative roles</h3>
+                  <h4 className="about__experience-title">Administrative roles</h4>
                   <span className="about__experience-institute-name">@App Tiempo</span>
                   <p>
                     Supported the implementation of the QualityManagement System (QMS) according to
@@ -145,7 +158,7 @@ export default function About() {
               <li className="about__projects-list">
                 <div className="about__projects-content">
                   <span className="about__projects-year">2023</span>
-                  <h3 className="about__projects-title">@App Tiempo</h3>
+                  <h4 className="about__projects-title">@App Tiempo</h4>
                   <Image
                     src="/images/appTiempo.jpg"
                     className="about__appTiempo-image"
@@ -155,9 +168,11 @@ export default function About() {
                   />
                   <p className="about__appTiempo-description">Description @AppTiempo.</p>
                 </div>
+              </li>
+              <li className="about__projects-list">
                 <div className="about__projects-content">
                   <span className="about__projects-year">2023</span>
-                  <h3 className="about__projects-title">Memorym game</h3>
+                  <h4 className="about__projects-title">Memorym game</h4>
                   <Image
                     src="/images/memorym.jpg"
                     className="about__appTiempo-image"

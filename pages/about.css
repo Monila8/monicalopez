@@ -1,3 +1,12 @@
 .about__content {
-    color:aquamarine;
+    color:#fff
 }
+
+.about__title {
+    padding: 30px;
+}
+
+/* .about__about-title {
+    color: #fff;
+    font-size: 20px;
+} */

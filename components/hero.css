@@ -1,3 +1,10 @@
 .hero__wrapper {
-    color:blueviolet;
+    color: #fff;
+}
+
+.hero__content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }

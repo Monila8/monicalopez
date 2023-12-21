@@ -14,8 +14,8 @@ export default function BlogIndex() {
       <div className="index__blog-image">
         <Image
           src={javascriptIcon}
-          width={150}
-          height={150}
+          width={450}
+          height={450}
           alt="js icon"
         />
       </div>
