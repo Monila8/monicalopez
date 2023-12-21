@@ -1,4 +1,3 @@
-// import '../App.css'
 import Link from "next/link"
 
 export default function Navbar() {
@@ -6,16 +5,25 @@ export default function Navbar() {
     <div className="navbar__container">
       <ul className="navbar__list">
         <li>
-          <Link href="/">Home</Link>
+          <Link
+            href="/"
+            className="navbar__link">
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link
+            href="/about"
+            className="navbar__link">
+            About
+          </Link>
         </li>
         <li>
-          <Link href="/blog">Blog</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
+          <Link
+            href="/blog"
+            className="navbar__link">
+            Blog
+          </Link>
         </li>
       </ul>
     </div>

@@ -1,3 +1,22 @@
 .navbar__container {
-    color:#fff;
+  margin-top: 30px;
+  
 }
+
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar__link {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 35px;
+  text-decoration: none;
+}
+
+.navbar__link:hover {
+  text-decoration: underline;
+}
+
