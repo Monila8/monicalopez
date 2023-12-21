@@ -1,8 +1,9 @@
 # Grammar and types
 
-## JavaScript basics: An overview
+## Javascript basics: An overview
 
 JavaScript, a versatile programming language, draws inspiration from Java, C, and C++, while also incorporating elements from Awk, Perl, and Python. This unique blend contributes to its syntax richness. In this article, we'll delve into the basics of JavaScript syntax, exploring its case sensitivity, statement structure, and the intricacies of comments.
+
 
 ### Case sensitivity and unicode usage:
 

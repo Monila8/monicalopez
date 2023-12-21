@@ -6,9 +6,9 @@
 
   function BlogPost({ slug, content }) {
     return (
-      <div>
+      <article className="article">
         <div dangerouslySetInnerHTML={{ __html: content }}></div>
-      </div>
+      </article>
     )
   }
 
@@ -34,4 +34,4 @@
     }
   }
 
-  export default BlogPost
+export default BlogPost

@@ -1,9 +1,8 @@
 import Image from "next/image"
-// import '../App.css'
 
 export default function Footer() {
   return (
-    <div className="footer__wrapper">
+    <footer className="footer__wrapper">
       <h2>Contact</h2>
       <p className="footer__text">
         <Image
@@ -45,6 +44,6 @@ export default function Footer() {
         <b>Medellín, Colombia</b>
       </p>
       <br />
-    </div>
+    </footer>
   )
 }

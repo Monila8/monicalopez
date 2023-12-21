@@ -3,8 +3,6 @@ import Tabs from "react-bootstrap/Tabs"
 import Navbar from "../components/Navbar"
 import Image from "next/image"
 import Footer from "@/components/Footer"
-  import "../styles/Home.module.css"
-// import '../App.css'
 
 export default function About() {
   return (

@@ -1,5 +1,4 @@
 import Head from "next/head"
-import styles from "@/styles/Home.module.css"
 import Navbar from "@/components/Navbar"
 import Hero from "@/components/Hero"
 import SkillsHome from "@/components/SkillsHome"
@@ -24,7 +23,7 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
-      <main className={`${styles.main}`}>
+      <main>
         <Navbar />
         <Hero />
         <SkillsHome />
