@@ -23,7 +23,7 @@
   export async function getStaticPaths({}) {
     return {
       paths: [
-        { params: { slug: "arrays" } },
+        { params: { slug: "literals" } },
         { params: { slug: "functions" } },
         { params: { slug: "grammar-types" } },
         { params: { slug: "logic-flow" } },

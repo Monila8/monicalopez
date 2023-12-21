@@ -171,7 +171,4 @@ Alternatively, you can use the unary plus operator (+) for clarity:
 +"1.1" + +"1.1"; // 2.2
 ```
 
-## Literals
-Literals represent values in JavaScript. These are fixed values—not variables—that you literally provide in your script. 
-
-Understanding these fundamental aspects sets the stage for delving deeper into JavaScript's rich syntax and functionality. Stay tuned for more insights into variable declarations, data types, and essential programming constructs.
+[Next: Literals](literals)
