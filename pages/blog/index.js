@@ -14,8 +14,8 @@ export default function BlogIndex() {
       <div className="index__blog-image">
         <Image
           src={javascriptIcon}
-          width={450}
-          height={450}
+          width={300}
+          height={300}
           alt="js icon"
         />
       </div>
@@ -103,14 +103,15 @@ export default function BlogIndex() {
           </ListGroup.Item>
           <ListGroup.Item
             action
-            href="/blog/logic-flow">
-            Logic and flow
+            href="/blog/arrays">
+            Literals
           </ListGroup.Item>
           <ListGroup.Item
             action
-            href="/blog/arrays">
-            Arrays
+            href="/blog/logic-flow">
+            Logic and flow
           </ListGroup.Item>
+
           <ListGroup.Item
             action
             href="/blog/objects">
