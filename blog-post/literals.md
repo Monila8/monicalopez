@@ -97,6 +97,57 @@ Examples of floating-point literals:
 3.1E+12
 .1e-23
 
+## Object literals
+
+In the vibrant landscape of JavaScript, object literals stand as versatile entities, allowing developers to create dynamic lists of property-value pairs. This blog post unravels the intricacies of object literals, explores their usage, and introduces enhanced features for more expressive and concise code.
+
+Understanding Object Literals:
+An object literal is a collection of property names and their associated values, enclosed in curly braces ({}). Here's a simple example:
+
+```javascript
+const car = { myCar: "Saturn", getCar: carTypes("Honda"), special: sales };
+```
+In this example, the car object encapsulates properties like myCar and getCar, showcasing the flexibility of object literals in representing real-world scenarios.
+
+### Numeric and String Literals in Property Names:
+Object literals allow for numeric or string literals as property names and even support nested objects:
+
+```javascript
+const car = { manyCars: { a: "Saab", b: "Jeep" }, 7: "Mazda" };
+```
+
+Here, car.manyCars.b gives access to the nested object's property, and car[7] accesses the property with a numeric literal name.
+
+### Handling Property Names That Aren't Valid Identifiers:
+For property names that aren't valid JavaScript identifiers or numbers, enclose them in quotes or use bracket notation:
+
+```javascript
+const unusualPropertyNames = {
+  '': 'An empty string',
+  '!': 'Bang!'
+};
+
+console.log(unusualPropertyNames[""]); // An empty string
+console.log(unusualPropertyNames["!"]); // Bang!
+```
+
+### Enhanced Object Literals:
+JavaScript supports enhanced object literal syntax, offering shorthand notations and advanced features:
+
+```javascript
+const obj = {
+  __proto__: theProtoObj, // Setting the prototype at construction
+  handler, // Shorthand for 'handler: handler'
+  toString() {
+    // Defining methods
+    return "d " + super.toString(); // Making super calls
+  },
+  ["prop_" + (() => 42)()]: 42, // Computing property names with expressions
+};
+```
+
+These enhancements bring object literals and class declarations closer, offering a unified approach to object-based design.
+
 [More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals) 
 
 [Previous: Grammar and types](grammar-types)
