@@ -8,11 +8,11 @@ export default function About() {
   return (
     <div className="about__content">
       <Navbar />
-      <h2 className="about__title">About</h2>
-      <div className="about__text">
+      <h2 className="about__page-title">About</h2>
+      <div className="about__wrapper">
         <button
-          href="#resume"
-          className="about__download-button">
+          type="button"
+          className="btn btn-outline-light">
           Get Resume
           <Image
             src="/images/download.png"
@@ -22,7 +22,7 @@ export default function About() {
             alt="Me"
           />
         </button>
-        <div>
+        <div className="about__text">
           <h2 className="about__title">I&apos;m Mónica López</h2>
           <h3 className="about__sub-title">Software Developer &amp; Frontend.</h3>
           <p>

@@ -10,7 +10,7 @@ export default function BlogIndex() {
   return (
     <div className="index__blog-container">
       <Navbar />
-      <h2 className="index__title">Blog</h2>
+      <h2 className="index__page-title">Blog</h2>
       <div className="index__blog-image">
         <Image
           src={javascriptIcon}
