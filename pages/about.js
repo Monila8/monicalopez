@@ -25,6 +25,7 @@ export default function About() {
         <div className="about__text">
           <h2 className="about__title">I&apos;m Mónica López</h2>
           <h3 className="about__sub-title">Software Developer &amp; Frontend.</h3>
+          <br />
           <p>
             Experienced frontend developer with a strong background in administrative and quality
             management systems. I&apos;ve gained 1 year of practical experience in developing web
