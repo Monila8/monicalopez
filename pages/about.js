@@ -146,7 +146,7 @@ export default function About() {
                 <div className="about__experience-content">
                   <span className="about__experience-year">2015 - 2022</span>
                   <h4 className="about__experience-title">Administrative roles</h4>
-                  <span className="about__experience-institute-name">@App Tiempo</span>
+                  <span className="about__experience-institute-name">University of Antioquia</span>
                   <p>
                     Supported the implementation of the QualityManagement System (QMS) according to
                     ISO 9001, achieving successful certification. Developed and supervised training
