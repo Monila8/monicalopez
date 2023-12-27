@@ -1,3 +1,20 @@
+
 .footer__wrapper {
-    color: #fff
+  color: #fff;
+  margin: 20px;
+  text-align: right;
+}
+
+.footer__text {
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+}
+
+.footer__text b {
+  margin-left: 10px;
+}
+
+.footer__text img {
+  filter: brightness(0) invert(1);
 }

@@ -1,8 +1,18 @@
 .skillsHome__container {
     color:#fff;
+    margin: 20px;
 }
 
 .skillsHome__col-12 {
   display: flex;
   justify-content: center;
+}
+
+.skillsHome__icon {
+  margin-right: 50px;
+  text-align: center;
+}
+
+.skillsHome__text {
+  margin-top: 5px;
 }

@@ -13,7 +13,6 @@ export default function Footer() {
         />
         <b>+57 3016560150</b>
       </p>
-      <br />
       <p className="footer__text">
         <Image
           src="/images/mail-icon.png"
@@ -23,7 +22,6 @@ export default function Footer() {
         />
         <b>monicalopezarroyave@gmail.com</b>
       </p>
-      <br />
       <p className="footer__text">
         <Image
           src="/images/github-icon.png"
@@ -33,7 +31,6 @@ export default function Footer() {
         />
         <b>Monila8</b>
       </p>
-      <br />
       <p className="footer__text">
         <Image
           src="/images/location-icon.png"
@@ -43,7 +40,6 @@ export default function Footer() {
         />
         <b>Medellín, Colombia</b>
       </p>
-      <br />
     </footer>
   )
 }

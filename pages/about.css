@@ -1,7 +1,6 @@
 .about__content {
   background-color: #252734; 
   color: #fff;
-  padding: 50px;
 }
 
 .about__page-title {
@@ -11,11 +10,26 @@
 }
 
 .about__wrapper {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
   margin: 20px;
+}
+
+.about__download-link {
+  color: #fff;
+  text-decoration: none; 
+}
+
+.btn.btn-outline-light:hover .about__download-link {
+  color: #000;
+}
+
+.about__download-link .about__download-icon {
+  filter: brightness(0) invert(1);
+  margin-left: 15px;
 }
 
 .btn.btn-outline-light {
@@ -27,11 +41,15 @@
   width: 180px;
 }
 
+.btn.btn-outline-light:hover .about__download-link .about__download-icon {
+  filter: brightness(0) invert(0); /* Invierte los colores para que la imagen sea negra al pasar el ratón sobre el botón */
+}
+
 .about__text {
-  display: flex;
-  flex-direction: column;
   background-color: #22262b;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
   padding: 20px;  
   width: 50%;
 }
@@ -44,3 +62,10 @@
   font-size: 18px; 
 }
 
+.about__about-navbar .nav-link {
+  color: #fff;
+}
+
+.about__education-content {
+  display: block;
+}

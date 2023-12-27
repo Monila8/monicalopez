@@ -1,6 +1,6 @@
 .hero__wrapper {
     color: #fff;
-    margin: 30px 0;
+    margin: 20px;
 }
 
 .hero__title {
@@ -14,4 +14,26 @@
   display: flex;
   justify-content: center;
   margin: auto;
+}
+
+.btn.btn-outline-light:hover .about__download-link {
+  color: #000;
+}
+
+.about__download-link .about__download-icon {
+  filter: brightness(0) invert(1);
+  margin-left: 15px;
+}
+
+.btn.btn-outline-light {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-top: 10px;
+  width: 180px;
+}
+
+.btn.btn-outline-light:hover .about__download-link .about__download-icon {
+  filter: brightness(0) invert(0); /* Invierte los colores para que la imagen sea negra al pasar el ratón sobre el botón */
 }

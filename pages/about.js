@@ -13,14 +13,19 @@ export default function About() {
         <button
           type="button"
           className="btn btn-outline-light">
-          Get Resume
-          <Image
-            src="/images/download.png"
-            className="about__download-icon"
-            width={15}
-            height={15}
-            alt="Me"
-          />
+          <a
+            href="/resume/ResumeMLA.pdf"
+            download="ResumeMLA.pdf"
+            className="about__download-link">
+            Get Resume
+            <Image
+              src="/images/download.png"
+              className="about__download-icon"
+              width={15}
+              height={15}
+              alt="download"
+            />
+          </a>
         </button>
         <div className="about__text">
           <h2 className="about__title">I&apos;m Mónica López</h2>
@@ -37,13 +42,13 @@ export default function About() {
         </div>
       </div>
       <Tabs
-        defaultActiveKey="profile"
+        defaultActiveKey="education"
         id="uncontrolled-tab-example"
         className="about__about-navbar">
         <Tab
           eventKey="education"
           title="Education"
-          className="about__about-title">
+          className="about__education-title">
           <div
             className="about__education"
             id="education-tab"
@@ -58,6 +63,7 @@ export default function About() {
                   <span className="about__institute-name">Udemy</span>
                 </div>
               </li>
+              <br />
               <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2023</span>
@@ -67,6 +73,7 @@ export default function About() {
                   <span className="about__institute-name">Platzi</span>
                 </div>
               </li>
+              <br />
               <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2023</span>
@@ -74,6 +81,7 @@ export default function About() {
                   <span className="about__institute-name">Udemy</span>
                 </div>
               </li>
+              <br />
               <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2022</span>
@@ -83,6 +91,7 @@ export default function About() {
                   <span className="about__institute-name">University of Antioquia</span>
                 </div>
               </li>
+              <br />
               <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2022</span>
@@ -90,6 +99,7 @@ export default function About() {
                   <span className="about__institute-name">Platzi</span>
                 </div>
               </li>
+              <br />
               <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2022</span>
@@ -97,6 +107,7 @@ export default function About() {
                   <span className="about__institute-name">Udemy</span>
                 </div>
               </li>
+              <br />
               <li className="about__education-list">
                 <div className="about__education-content">
                   <span className="about__education-year">2020</span>
@@ -130,6 +141,7 @@ export default function About() {
                   </p>
                 </div>
               </li>
+              <br />
               <li className="about__experience-list">
                 <div className="about__experience-content">
                   <span className="about__experience-year">2015 - 2022</span>
@@ -163,13 +175,14 @@ export default function About() {
                   <Image
                     src="/images/appTiempo.jpg"
                     className="about__appTiempo-image"
-                    width={250}
-                    height={150}
+                    width={450}
+                    height={250}
                     alt="AppTiempo"
                   />
                   <p className="about__appTiempo-description">Description @AppTiempo.</p>
                 </div>
               </li>
+              <br />
               <li className="about__projects-list">
                 <div className="about__projects-content">
                   <span className="about__projects-year">2023</span>
@@ -177,8 +190,8 @@ export default function About() {
                   <Image
                     src="/images/memorym.jpg"
                     className="about__appTiempo-image"
-                    width={250}
-                    height={150}
+                    width={450}
+                    height={250}
                     alt="Memorym"
                   />
                   <p className="about__memorym-description">
