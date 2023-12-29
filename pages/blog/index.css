@@ -1,9 +1,11 @@
 .index__blog-container {
     color: #fff;
 }
+
 .index__content {
   display: flex;
   justify-content: space-between;
+  margin: 20px;
 }
 
 .index__page-title {
@@ -29,6 +31,7 @@ h1 {
 
 .index__listGroup {
   margin-right: 30px;
+  margin-top: 105px;
   width: 250px;
 }
 
@@ -39,8 +42,6 @@ h1 {
 .index__listGroup-item {
   background-color: #f0f0f0;
 }
-
-
 
 .index__listGroup-item.active {
   background-color: #595959; /* Fondo gris más oscuro para el elemento activo */
