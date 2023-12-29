@@ -63,7 +63,7 @@ export default function BlogIndex() {
           </ListGroup.Item>
           <ListGroup.Item
             action
-            href="/blog/objects"
+            href="/blog/expressions-operators"
             className="index__listGroup-item">
             Expressions and operators
           </ListGroup.Item>

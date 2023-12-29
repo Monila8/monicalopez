@@ -51,6 +51,94 @@ Embark on detailed examples illustrating the evaluation process of assignment ex
 ### Avoiding Assignment Chains:
 Navigate the cautionary realm of assignment chains, where chaining or nesting assignments within expressions may lead to unexpected outcomes. Understand the risks associated with such practices, especially when declaring variables using const, let, or var statements.
 
+## Comparison operators
+Embark on a journey through JavaScript's comparison operators, powerful tools that assess operands and yield logical values based on the outcome of the comparison. These operators cater to numerical, string, logical, and object values, with a focus on standard lexicographical ordering for strings.
+
+### Type Conversion Insights:
+Explore the intricacies of type conversion when operands differ in type. JavaScript, in most cases, endeavors to harmonize operand types for numerical comparisons. Exceptionally, the strict equality and inequality operators (=== and !==) defy this convention, demanding identical types for comparison without implicit conversions.
+
+Operator:	
+- Equal (==) - Returns true if the operands are equal.
+- Not equal (!=) - Returns true if the operands are not equal.
+- Strict equal (===) - Returns true if the operands are equal and of the same type.
+- Strict not equal (!==) - Returns true if the operands are of the same type but not equal, or are of different types.
+- Greater than (>) - Returns true if the left operand is greater than the right operand.
+- Greater than or equal (>=)	- Returns true if the left operand is greater than or equal to the right operand.
+- Less than (<) - Returns true if the left operand is less than the right operand.
+- Less than or equal (<=) - Returns true if the left operand is less than or equal to the right operand.	
+
+Note: => is not a comparison operator but rather the notation for Arrow functions.
+
+### Examples of Comparison:
+```javascript
+const var1 = 3;
+const var2 = 4;
+
+console.log(3 == var1);       // true
+console.log("3" == var1);     // true
+console.log(3 == '3');        // true
+console.log(var1 != 4);        // true
+console.log(var2 !== "3");     // true
+console.log(3 === var1);       // true
+console.log(var1 !== "3");     // true
+console.log(var2 > var1);      // true
+console.log("12" > 2);         // true
+console.log(var2 >= var1);     // true
+console.log(var1 < var2);      // true
+console.log("2" < 12);         // true
+console.log(var1 <= var2);     // true
+console.log(var2 <= 5);        // true
+```
+
+## Numeric and string comparisons:
+Uncover the subtleties of numeric and string comparisons, where operators like > and < determine relationships between values. Explore how JavaScript navigates through scenarios involving numerical and lexicographical comparisons, offering insights into its underlying mechanisms.
+
+## Arithmetic Operators:
+Dive into the realm of JavaScript's arithmetic operators, essential tools that manipulate numerical values to produce singular numerical outcomes. These operators, whether applied to literals or variables, offer fundamental operations like addition, subtraction, multiplication, and division. Witness their behavior with floating-point numbers, where division by zero results in Infinity.
+
+### Standard arithmetic operators:
+Discover the core arithmetic operators that form the backbone of numerical operations. Gain insights into their behavior with floating-point numbers, such as the equality of different representations like 1/2 and 1.0/2.0.
+
+```javascript
+1 / 2;                   // 0.5
+1 / 2 === 1.0 / 2.0;     // true
+```
+
+### Extended arithmetic operators:
+Beyond the standard quartet of arithmetic operations, JavaScript introduces additional operators catering to specific needs.
+
+Operator:
+- Remainder (%) - Binary operator. Returns the integer remainder of dividing the two operands.
+- Increment (++) - Unary operator. Adds one to its operand. Prefix (++x) returns the value after adding one; postfix (x++) returns the value before adding one.
+- Decrement (--) - Unary operator. Subtracts one from its operand. The return value is similar to the increment operator.
+- Unary negation (-) - Unary operator. Returns the negation of its operand.
+- Unary plus (+) - Unary operator. Attempts to convert the operand to a number, if not already.
+- Exponentiation operator (**) - Calculates the base to the exponent power.	
+
+### Illustrative Examples:
+Explore these operators in action, gaining a hands-on understanding of their impact on numerical values.
+
+```javascript
+let x = 12;
+let y = 5;
+
+console.log(x % y);         // 2
+console.log(++x);           // 13
+console.log(x++);           // 13 (returns before increment)
+console.log(x);             // 14 (incremented value)
+console.log(--y);           // 4
+console.log(y--);           // 4 (returns before decrement)
+console.log(y);             // 3 (decremented value)
+console.log(-x);            // -14
+console.log(+"3");          // 3
+console.log(+true);         // 1
+console.log(2 ** 3);        // 8
+console.log(10 ** -1);      // 0.1
+```
+
+### Mastering arithmetic dynamics:
+Delve into the nuanced dynamics of arithmetic operations in JavaScript. Gain proficiency in harnessing these operators for diverse scenarios, from basic mathematical calculations to complex numerical manipulations.
+
 [Previous: Functions](functions)  
 [Next: ]()  
 [More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators)  
