@@ -139,6 +139,55 @@ console.log(10 ** -1);      // 0.1
 ### Mastering arithmetic dynamics:
 Delve into the nuanced dynamics of arithmetic operations in JavaScript. Gain proficiency in harnessing these operators for diverse scenarios, from basic mathematical calculations to complex numerical manipulations.
 
+## Bitwise Operators
+Embark on a journey into the binary universe as JavaScript's bitwise operators take center stage. Unlike traditional numerical operations, bitwise operators treat their operands as 32-bit binary entities, unlocking a new dimension of numerical manipulation. Dive into this realm of zeros and ones, where binary representations pave the way for intriguing bitwise operations.
+
+### Bitwise Operators Overview:
+Explore the diverse set of bitwise operators that redefine how JavaScript handles binary representations. These operators, summarized in the table below, delve into tasks like AND, OR, XOR, NOT, left shift, sign-propagating right shift, and zero-fill right shift.
+
+Operator	Usage	Description
+- Bitwise AND: a & b - Returns a one in each bit position where both operands have ones.
+- Bitwise OR: a | b - Returns a zero in each bit position for which the corresponding bits of both operands are zeros.
+- Bitwise XOR: a ^ b - Returns a zero where bits are the same, and a one where bits are different.
+- Bitwise NOT: ~ a - Inverts the bits of its operand.
+- Left shift: a << b - Shifts the bits of a to the left by b positions, filling in zeros from the right.
+- Sign-propagating right shift:	a >> b - Shifts the bits of a to the right by b positions, preserving the leftmost bit (sign bit).
+- Zero-fill right shift: a >>> b	- Shifts the bits of a to the right by b positions, filling in zeros from the left.
+
+### Bitwise logical operators:
+Conceptualize the operation of bitwise logical operators, where operands are converted to thirty-two-bit integers, and bit pairs are subjected to logical operations. Witness this process through illustrative examples involving AND, OR, XOR, and NOT.
+
+### Illustrative Examples:
+Explore how binary representations of numbers undergo bitwise operations, resulting in distinct numerical outcomes.
+
+```javascript
+const nine = 9;        // Binary: 1001
+const fifteen = 15;    // Binary: 1111
+
+console.log(fifteen & nine);   // 9 (AND operation)
+console.log(fifteen | nine);   // 15 (OR operation)
+console.log(fifteen ^ nine);   // 6 (XOR operation)
+console.log(~fifteen);         // -16 (Bitwise NOT)
+console.log(~nine);            // -10 (Bitwise NOT)
+```
+
+### Bitwise Shift Operators:
+Delve into the dynamics of bitwise shift operators, where bits are shifted left or right, creating intriguing results. Explore left shift, sign-propagating right shift, and zero-fill right shift.
+
+Examples:
+Uncover the impact of shifting bits in both directions, generating unique numerical outcomes.
+
+```javascript
+let num = 9;            // Binary: 1001
+
+console.log(num << 2);  // 36 (Left shift)
+console.log(num >> 2);  // 2 (Sign-propagating right shift)
+console.log(num >>> 2); // 2 (Zero-fill right shift)
+```
+
+### Mastering the Binary Terrain:
+Gain mastery over the binary terrain as you grasp the intricacies of JavaScript's bitwise operators. Witness how these operators open up new possibilities for numerical manipulation and delve into scenarios where binary logic shines.
+
 [Previous: Functions](functions)  
 [Next: ]()  
 [More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators)  
