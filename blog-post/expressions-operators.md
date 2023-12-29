@@ -346,7 +346,7 @@ for (let i = 0, j = 9; i <= j; i++, j--) {
 ## Unary operators
 Unary Operators: Solo Performances
 
-## Delete operator:
+### Delete operator:
 The delete operator gracefully removes an object's property, with a nuanced dance of success and failure.
 
 ```javascript
@@ -356,7 +356,7 @@ const myObj = { h: 4 };
 delete myObj.h; // Returns true (can delete user-defined properties)
 ```
 
-## Typeof operator:
+### Typeof operator:
 The typeof operator unveils the identity of variables, keywords, and objects, a linguistic oracle in the world of types.
 
 ```javascript
@@ -368,12 +368,95 @@ typeof today; // Returns "object"
 typeof doesntExist; // Returns "undefined"
 ```
 
-## Void operator:
+### Void operator:
 The void operator, a whisper in the void, evaluates expressions without returning a value, a silent yet intentional act.
 
 ```javascript
 void expression;
 ```
+## Relational Operators
+In the vast terrain of JavaScript, relational operators serve as navigators, comparing objects and unveiling the intricate relationships within. Traverse the in operator's landscapes, explore the instanceof operator's realm, and discover the nuances of basic expressions.
+
+In Operator: Unveiling Object Realms
+The in operator uncovers hidden realms, returning true if a property resides within the specified object.
+
+```javascript
+// Arrays
+const trees = ["redwood", "bay", "cedar", "oak", "maple"];
+0 in trees; // Returns true
+3 in trees; // Returns true
+6 in trees; // Returns false
+"bay" in trees; // Returns false (specify index, not value)
+"length" in trees; // Returns true (length is an Array property)
+
+// Built-in objects
+"PI" in Math; // Returns true
+const myString = new String("coral");
+"length" in myString; // Returns true
+
+// Custom objects
+const mycar = { make: "Honda", model: "Accord", year: 1998 };
+"make" in mycar; // Returns true
+"model" in mycar; // Returns true
+```
+
+### Instanceof operator
+The instanceof operator reveals the true nature of objects, confirming if an object belongs to a specified type.
+
+```javascript
+const theDay = new Date(1995, 12, 17);
+if (theDay instanceof Date) {
+  // Statements to execute
+}
+```
+
+## Basic Expressions:
+
+### this Keyword:
+The this keyword guides us to the current object, a dynamic beacon in the method landscape.
+
+```javacript
+this["propertyName"];
+this.propertyName;
+```
+
+### Grouping operator ( ):
+The grouping operator orchestrates the precedence ballet, allowing expressions to dance in harmony.
+
+```javascript
+const a = 1;
+const b = 2;
+const c = 3;
+
+// Default precedence
+a + b * c; // 7
+// Evaluated by default like this
+a + (b * c); // 7
+
+// Overriding precedence
+// Addition before multiplication
+(a + b) * c; // 9
+
+// Equivalent to
+a * c + b * c; // 9
+```
+
+### New operator:
+The new operator conjures instances of objects, breathing life into both user-defined and built-in types.
+
+```javascript
+const objectName = new ObjectType(param1, param2, /* …, */ paramN);
+```
+
+### Super keyword:
+The super keyword summons the wisdom of an object's parent, a conduit to invoke the parent constructor or functions.
+
+```javascript
+super(args); // Calls the parent constructor
+super.functionOnParent(args);
+```
+
+Embark on the journey through relational operators, where inquisitive operators unveil object realms, instanceof uncovers object types, and basic expressions navigate the expressive galaxy. May your comparisons be true, your instances vibrant, and your expressions harmonious in the captivating landscapes of JavaScript.
 
 [Previous: Functions](functions)  
 [Next: ]()  
