@@ -174,6 +174,6 @@ Alternatively, you can use the unary plus operator (+) for clarity:
 ```
 [More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals) 
 
-[Next: Literals](literals)
-
 [Regresar al Blog]()
+
+[Next: Literals](literals)
