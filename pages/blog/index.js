@@ -72,7 +72,7 @@ export default function BlogIndex() {
           <br />
           <h1 className="index__article-title">Introduction</h1>
           <br />
-          <h3 className="index__sub-title">What is javascript?</h3>
+          <h3 className="index__sub-title">What is Javascript?</h3>
           <p>
             JavaScript, is a versatile and foundational programming language for web development. It
             emerged in the 1990s as a tool to imbue web pages with interactivity and dynamism,

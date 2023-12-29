@@ -18,10 +18,10 @@
 }
 
 .skillsHome__development {
-  background-color: #22262b;
+  background-color: #1a1f29;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   padding: 20px;  
-  width: 50%;  
+  width: 40%;
 }
