@@ -112,4 +112,4 @@ try {
 
 [Previous: Literals](literals)
 
-[Next: Logic and flow](loops)
+[Next: Loops](loops)
