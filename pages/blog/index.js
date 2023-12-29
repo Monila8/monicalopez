@@ -13,6 +13,7 @@ export default function BlogIndex() {
       <h2 className="index__page-title">Blog</h2>
       <div className="index__blog-image">
         <Image
+          className="index__js-icon"
           src={javascriptIcon}
           width={300}
           height={300}
@@ -21,9 +22,55 @@ export default function BlogIndex() {
       </div>
 
       <div className="index__content">
+        <ListGroup
+          defaultActiveKey="/blog"
+          className="index__listGroup">
+          <ListGroup.Item
+            action
+            href="/blog"
+            className="index__listGroup-item">
+            Introduction
+          </ListGroup.Item>
+          <ListGroup.Item
+            action
+            href="/blog/grammar-types"
+            className="index__listGroup-item">
+            Grammar and types
+          </ListGroup.Item>
+          <ListGroup.Item
+            action
+            href="/blog/arrays"
+            className="index__listGroup-item">
+            Literals
+          </ListGroup.Item>
+          <ListGroup.Item
+            action
+            href="/blog/logic-flow"
+            className="index__listGroup-item">
+            Logic and flow
+          </ListGroup.Item>
+          <ListGroup.Item
+            action
+            href="/blog/objects"
+            className="index__listGroup-item">
+            Objects
+          </ListGroup.Item>
+          <ListGroup.Item
+            action
+            href="/blog/loops"
+            className="index__listGroup-item">
+            Loops
+          </ListGroup.Item>
+          <ListGroup.Item
+            action
+            href="/blog/functions"
+            className="index__listGroup-item">
+            Functions
+          </ListGroup.Item>
+        </ListGroup>
         <div className="index__article">
           <br />
-          <h2 className="index__article-title">Introduction</h2>
+          <h1 className="index__article-title">Introduction</h1>
           <br />
           <h3 className="index__sub-title">What is javascript?</h3>
           <p>
@@ -90,44 +137,6 @@ export default function BlogIndex() {
             </li>
           </ul>
         </div>
-        <ListGroup defaultActiveKey="/blog">
-          <ListGroup.Item
-            action
-            href="/blog">
-            Introduction
-          </ListGroup.Item>
-          <ListGroup.Item
-            action
-            href="/blog/grammar-types">
-            Grammar and types
-          </ListGroup.Item>
-          <ListGroup.Item
-            action
-            href="/blog/arrays">
-            Literals
-          </ListGroup.Item>
-          <ListGroup.Item
-            action
-            href="/blog/logic-flow">
-            Logic and flow
-          </ListGroup.Item>
-
-          <ListGroup.Item
-            action
-            href="/blog/objects">
-            Objects
-          </ListGroup.Item>
-          <ListGroup.Item
-            action
-            href="/blog/loops">
-            Loops
-          </ListGroup.Item>
-          <ListGroup.Item
-            action
-            href="/blog/functions">
-            Functions
-          </ListGroup.Item>
-        </ListGroup>
       </div>
       <Footer />
     </div>

@@ -1,5 +1,9 @@
 .index__blog-container {
-    color: #fff
+    color: #fff;
+}
+.index__content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .index__page-title {
@@ -12,4 +16,33 @@
    font-size: 16px;
    margin: 30px 0;
    text-align: center;
+}
+
+.index__blog-image {
+  display: flex;  
+  justify-content: center;
+}
+
+h1 {
+   text-align: center;
+}
+
+.index__listGroup {
+  margin-right: 30px;
+  width: 250px;
+}
+
+.index__article {
+  flex: 1;
+}
+
+.index__listGroup-item {
+  background-color: #f0f0f0;
+}
+
+
+
+.index__listGroup-item.active {
+  background-color: #595959; /* Fondo gris más oscuro para el elemento activo */
+  border: 2px solid #595959;
 }
