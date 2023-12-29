@@ -16,3 +16,12 @@
 .skillsHome__text {
   margin-top: 5px;
 }
+
+.skillsHome__development {
+  background-color: #22262b;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;  
+  width: 50%;  
+}
