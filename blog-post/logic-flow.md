@@ -108,8 +108,6 @@ try {
 }
 ```
 
-[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals) 
-
 [Previous: Literals](literals)
-
 [Next: Loops](loops)
+[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling) 

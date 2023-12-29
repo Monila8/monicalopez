@@ -296,8 +296,6 @@ lines.";
 console.log(str); // this string is broken across multiple lines.
 ```
 
-[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals) 
-
 [Previous: Grammar and types](grammar-types)
-
 [Next: Logic and flow](logic-flow)
+[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals) 

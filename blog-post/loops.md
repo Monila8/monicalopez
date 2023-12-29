@@ -85,8 +85,6 @@ for (variable of object)
   statement
 ```
 
-[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals) 
-
 [Previous: Logic and flow](logic-flow)
-
 [Next: Functions](functions)
+[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) 

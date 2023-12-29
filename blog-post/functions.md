@@ -119,10 +119,6 @@ const arr = multiply(2, 1, 2, 3);
 console.log(arr); // [2, 4, 6]
 ```
 
-
-
-[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals) 
-
-[Previous: Loops](loops)
-
-[Next: ]()
+[Previous: Loops](loops)  
+[Next: ]()  
+[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)   

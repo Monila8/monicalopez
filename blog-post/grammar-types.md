@@ -172,8 +172,9 @@ Alternatively, you can use the unary plus operator (+) for clarity:
 (+"1.1") + (+"1.1"); // 2.2
 // Note: the parentheses are added for clarity, not required.
 ```
-[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals) 
 
-[Regresar al Blog]()
+[Regresar al Blog](http://localhost:3000/blog)
 
 [Next: Literals](literals)
+  
+[More Information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types)
