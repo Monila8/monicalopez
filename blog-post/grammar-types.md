@@ -43,19 +43,19 @@ Comments play a crucial role in enhancing code readability and providing insight
 
 Comments behave like whitespace and are discarded during script execution, contributing to cleaner and more maintainable code.
 
-## Variable Declarations:
+## Variable declarations:
 JavaScript offers three types of variable declarations:
 
 - var: Declares a variable, optionally initializing it.
 - let: Declares a block-scoped, local variable, optionally initializing it.
 - const: Declares a block-scoped, read-only named constant.
 
-### Identifiers and Rules:
+### Identifiers and rules:
 Variables, represented by identifiers, follow specific rules in JavaScript. Identifiers usually start with a letter, underscore (_), or dollar sign ($). Subsequent characters can be digits (0–9), and due to case sensitivity, include both uppercase (A–Z) and lowercase (a–z) letters. Unicode letters and escape sequences can also be used in identifiers.
 
 Examples of legal names include Number_hits, temp99, $credit, and _name.
 
-### Declaring Variables:
+### Declaring variables:
 Variables can be declared using 'var' for both local and global contexts or 'const' and 'let' for block-scoped local variables. It's crucial to declare variables before using them to avoid errors, especially in strict mode.
 
 ```javascript
@@ -63,14 +63,14 @@ let x;
 console.log(x); // logs "undefined"
 ```
 
-### Declaration and Initialization:
+### Declaration and initialization:
 In a statement like 'let x = 42,' 'let x' is a declaration, allowing access without a ReferenceError, while '= 42' is an initializer, assigning a value. 'const' declarations always require an initializer, preventing post-declaration assignments.
 
 ```javascript
 const x; // SyntaxError: Missing initializer in const declaration
 ```
 
-### Variable Scope:
+### Variable scope:
 Variables can belong to:
 - Global scope: The default scope for all code running in script mode.
 - Module scope: The scope for code running in module mode.
@@ -100,7 +100,7 @@ if (true) {
 console.log(x); // x is 5
 ```
 
-### Variable Hoisting:
+### Variable hoisting:
 'var'-declared variables are hoisted, accessible anywhere in their scope. While 'let' and 'const' hoisting is debated, referencing them before declaration results in a 'temporal dead zone' error.
 
 ```javascript
@@ -108,7 +108,7 @@ console.log(x === undefined); // true
 var x = 3;
 ```
 
-### Global Variables:
+### Global variables:
 Global variables are properties of the global object, accessible using 'window.variable' or 'globalThis.variable.' They facilitate communication between different windows or frames.
 
 ```javascript
@@ -124,7 +124,7 @@ const PI = 3.14;
 const MY_OBJECT = { key: "value" };
 MY_OBJECT.key = "otherValue";
 ``` 
-## Data Types in JavaScript:
+## Data types in JavaScript:
 JavaScript recognizes eight data types, and they play crucial roles in making your code perform various tasks:
 
 - Boolean: Represents true or false.
@@ -149,7 +149,7 @@ answer = "Thanks for all the fish!";
 
 This flexibility allows you to switch a variable from a number to a string without causing errors.
 
-### Numeric Operations and the '+' Operator:
+### Numeric operations and the '+' operator:
 In expressions involving numbers and strings with the + operator, JavaScript converts numeric values to strings. For instance:
 
 ```javascript
@@ -158,7 +158,7 @@ y = 42 + " is the answer"; // "42 is the answer"
 z = "37" + 7; // "377"
 ```
 
-### Converting Strings to Numbers:
+### Converting strings to numbers:
 When a value representing a number is stored as a string, JavaScript provides methods for conversion, such as parseInt() and parseFloat(). Always include the radix parameter with parseInt() to specify the numerical system.
 
 ```javascript
@@ -168,9 +168,12 @@ parseInt("101", 2); // 5
 Alternatively, you can use the unary plus operator (+) for clarity:
 
 ```javascript
-+"1.1" + +"1.1"; // 2.2
+"1.1" + "1.1" // '1.11.1'
+(+"1.1") + (+"1.1"); // 2.2
+// Note: the parentheses are added for clarity, not required.
 ```
+[More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals) 
 
 [Next: Literals](literals)
 
-[Regresar al Blog](tocomplete)
+[Regresar al Blog]()

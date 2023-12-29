@@ -1,4 +1,4 @@
-## Literals
+# Literals
 Literals represent values in JavaScript. These are fixed values—not variables—that you literally provide in your script. 
 
 Understanding these fundamental aspects sets the stage for delving deeper into JavaScript's rich syntax and functionality. Stay tuned for more insights into variable declarations, data types, and essential programming constructs.
@@ -13,7 +13,7 @@ Understanding these fundamental aspects sets the stage for delving deeper into J
 ## Arrays
 In the dynamic world of JavaScript, array literals emerge as versatile tools for handling lists of values. These expressions, enclosed in square brackets ([]), allow you to create and initialize arrays efficiently. In this blog post, we'll delve into the nuances of array literals, explore their features, and shed light on best practices.
 
-### Creating Arrays with Literals:
+### Creating Arrays with literals:
 An array literal is a concise way to initialize an array with specific values. Consider the following example:
 
 ```javascript
@@ -22,7 +22,7 @@ const coffees = ["French Roast", "Colombian", "Kona"];
 
 Here, the 'coffees' array is created with three elements, each representing a different type of coffee. The length of the array is automatically set based on the number of elements provided.
 
-### Handling Extra Commas in Array Literals:
+### Handling extra commas in Array literals:
 Array literals offer flexibility, allowing for empty slots with the use of extra commas. For instance:
 
 ```javascript
@@ -45,7 +45,7 @@ However, it's crucial to note that explicit declaration of missing elements or a
 const myList = ["home", /* empty */, "school", /* empty */, ];
 ```
 
-### Best Practices for Trailing Commas:
+### Best practices for trailing commas:
 Trailing commas can enhance the cleanliness of version control diffs, particularly in multi-line arrays. For instance:
 
 ```javascript
@@ -65,7 +65,7 @@ The Boolean type has two literal values: **true** and **false**.
 
 In the realm of JavaScript, numeric literals serve as the numerical foundation, providing a way to express both integers and floating-point numbers. This blog post unravels the intricacies of numeric literals, exploring various bases for integers and the anatomy of floating-point literals.
 
-### Understanding Integer Literals:
+### Understanding integer literals:
 JavaScript supports integer and BigInt literals in different bases, each with its own distinctive syntax:
 
 - Decimal (Base 10): A sequence of digits without a leading 0.
@@ -81,7 +81,7 @@ Examples of integer literals in different bases:
 - Hexadecimal: 0x1123, 0x00111, 0x123456789ABCDEFn
 - Binary: 0b11, 0b0011, 0b11101001010101010101n
 
-### Exploring Floating-Point Literals:
+### Exploring floating-point literals:
 Floating-point literals, representing decimal numbers, have a structured syntax:
 
 ```javascript
@@ -109,7 +109,7 @@ const car = { myCar: "Saturn", getCar: carTypes("Honda"), special: sales };
 ```
 In this example, the car object encapsulates properties like myCar and getCar, showcasing the flexibility of object literals in representing real-world scenarios.
 
-### Numeric and String Literals in Property Names:
+### Numeric and String literals in property names:
 Object literals allow for numeric or string literals as property names and even support nested objects:
 
 ```javascript
@@ -118,7 +118,7 @@ const car = { manyCars: { a: "Saab", b: "Jeep" }, 7: "Mazda" };
 
 Here, car.manyCars.b gives access to the nested object's property, and car[7] accesses the property with a numeric literal name.
 
-### Handling Property Names That Aren't Valid Identifiers:
+### Handling property names that aren't valid identifiers:
 For property names that aren't valid JavaScript identifiers or numbers, enclose them in quotes or use bracket notation:
 
 ```javascript
@@ -131,7 +131,7 @@ console.log(unusualPropertyNames[""]); // An empty string
 console.log(unusualPropertyNames["!"]); // Bang!
 ```
 
-### Enhanced Object Literals:
+### Enhanced object literals:
 JavaScript supports enhanced object literal syntax, offering shorthand notations and advanced features:
 
 ```javascript
@@ -152,7 +152,7 @@ These enhancements bring object literals and class declarations closer, offering
 
 In the realm of JavaScript, Regular Expressions (RegExp) play a pivotal role in pattern matching and string manipulation. This blog post explores the world of RegExp literals, concise representations of powerful patterns enclosed between slashes. Dive into the details, understand their syntax, and witness how RegExp literals elevate your string-handling capabilities.
 
-### Understanding RegExp Literals:
+### Understanding RegExp literals:
 A RegExp literal is a pattern enclosed between forward slashes (/). Here's a simple example:
 
 ```javascript
@@ -161,7 +161,7 @@ const re = /ab+c/;
 
 In this example, the RegExp literal /ab+c/ represents a pattern that matches strings containing 'a', followed by one or more 'b's, and ending with 'c'. This concise syntax encapsulates complex patterns for efficient string searching.
 
-### Creating RegExp Patterns:
+### Creating RegExp patterns:
 RegExp literals offer a concise way to create patterns for matching strings. You can include various characters and modifiers within the slashes to define intricate matching conditions.
 
 ```javascript
@@ -170,7 +170,7 @@ const emailPattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
 
 Here, emailPattern represents a RegExp literal for matching email addresses.
 
-### Working with RegExp Methods:
+### Working with RegExp methods:
 JavaScript provides powerful RegExp methods like test() and exec() for working with RegExp literals. These methods allow you to check if a pattern matches a string or extract matched substrings.
 
 ```javascript
@@ -181,7 +181,7 @@ console.log(pattern.test(text)); // true
 console.log(pattern.exec(text)); // ['fox', index: 16, input: 'The quick brown fox jumps over the lazy dog']
 ```
 
-### RegExp Modifiers and Flags:
+### RegExp modifiers and flags:
 
 RegExp literals can be enhanced with modifiers and flags to modify their behavior. For example, adding the 'i' flag makes the pattern case-insensitive.
 
@@ -193,7 +193,7 @@ console.log(caseInsensitivePattern.test(text)); // true
 ## String literals
 Strings, the fundamental building blocks of text in JavaScript, come in two flavors: string literals and String objects. This blog post delves into the realm of string literals, exploring their syntax, usage, and nuances. Uncover the power of crafting text with characters enclosed in quotes and discover how strings contribute to the expressive capabilities of JavaScript.
 
-### Understanding String Literals:
+### Understanding string literals:
 A string literal is a sequence of characters enclosed in either double (") or single (') quotation marks. It can be as simple as a single word or as complex as multiline, formatted text. Let's explore some examples:
 
 ```javascript
@@ -206,7 +206,7 @@ A string literal is a sequence of characters enclosed in either double (") or si
 
 Here, these examples showcase the flexibility of string literals, accommodating various characters and formats.
 
-### String Object Methods on Literals:
+### String object methods on literals:
 String literals offer a convenient way to interact with String object methods. JavaScript seamlessly converts a string literal to a temporary String object, allowing you to call methods like length directly on the literal.
 
 ```javascript
@@ -214,7 +214,7 @@ console.log("Joyo's cat".length); // Outputs: 10
 ```
 Explore the multitude of String methods to manipulate, search, and extract information from string literals.
 
-### Template Literals:
+### Template literals:
 Introducing a powerful enhancement to string literals – template literals. Enclosed by back-ticks (`), template literals offer multiline support, string interpolation, and improved readability.
 
 ```javascript
@@ -225,7 +225,7 @@ Introducing a powerful enhancement to string literals – template literals. Enc
  ```
 Take advantage of template literals for dynamic and multiline string constructions, enhancing code clarity.
 
-### Tagged Templates:
+### Tagged templates:
 Delve into the advanced feature of tagged templates, combining functions and template literals. This concise syntax facilitates string processing, allowing for dynamic content insertion and serialization.
 
 ```javascript
@@ -241,7 +241,7 @@ My current progress is: ${progress}
 ```
 Tagged templates provide a structured approach to string manipulation, making your code more expressive and maintainable.
 
-### Special Characters and Escaping:
+### Special characters and escaping:
 Understand the use of special characters in strings, such as newline and tab, and how to include them using escape sequences. Learn about character escaping to insert quotes within a string and handle special characters like backslash.
 
 ```javascript
@@ -300,4 +300,4 @@ console.log(str); // this string is broken across multiple lines.
 
 [Previous: Grammar and types](grammar-types)
 
-[Next: something](sometrhing)
+[Next: Logic and flow](logic-flow)
