@@ -188,6 +188,59 @@ console.log(num >>> 2); // 2 (Zero-fill right shift)
 ### Mastering the Binary Terrain:
 Gain mastery over the binary terrain as you grasp the intricacies of JavaScript's bitwise operators. Witness how these operators open up new possibilities for numerical manipulation and delve into scenarios where binary logic shines.
 
+## Logical Operators:
+Logical operators in JavaScript are powerful tools primarily used with Boolean values. However, their versatility extends beyond Booleans, as they can return non-Boolean values. This exploration will dissect the logical AND (&&), logical OR (||), and logical NOT (!) operators, unraveling their behavior with illustrative examples.
+
+### Logical AND (&&) Operator:
+The logical AND operator combines two expressions, returning the second expression if the first can be converted to false; otherwise, it returns the first expression. When used with Boolean values, it returns true only if both operands are true; otherwise, it returns false.
+
+Examples:
+```javascript
+const a1 = true && true;      // true && true returns true
+const a2 = true && false;     // true && false returns false
+const a3 = false && true;     // false && true returns false
+const a4 = false && 3 === 4;  // false && false returns false
+const a5 = "Cat" && "Dog";     // true && true returns Dog
+const a6 = false && "Cat";    // false && true returns false
+const a7 = "Cat" && false;    // true && false returns false
+```
+### Logical OR (||) Operator:
+The logical OR operator evaluates two expressions, returning the first expression if it can be converted to true; otherwise, it returns the second expression. When employed with Boolean values, it returns true if either operand is true; if both are false, it returns false.
+
+Examples:
+```javascript
+const o1 = true || true;      // true || true returns true
+const o2 = false || true;     // false || true returns true
+const o3 = true || false;     // true || false returns true
+const o4 = false || 3 === 4;  // false || false returns false
+const o5 = "Cat" || "Dog";     // true || true returns Cat
+const o6 = false || "Cat";    // false || true returns Cat
+const o7 = "Cat" || false;    // true || false returns Cat
+```
+
+### Logical NOT (!) Operator:
+The logical NOT operator negates a single operand, returning false if the operand can be converted to true; otherwise, it returns true.
+
+Examples:
+```javascript
+const n1 = !true;   // !true returns false
+const n2 = !false;  // !false returns true
+const n3 = !"Cat";  // !true returns false
+```
+
+### Short-Circuit Evaluation:
+Logical expressions undergo left-to-right evaluation, employing short-circuit rules to optimize execution:
+
+- false && anything short-circuits to false.
+- true || anything short-circuits to true.
+
+This ensures correctness while avoiding unnecessary evaluations.
+
+Modern Alternative: Nullish Coalescing Operator (??):
+For scenarios involving defaults where values like '' or 0 are valid, the Nullish coalescing operator (??) serves as a superior alternative to ||.
+
+
+
 [Previous: Functions](functions)  
 [Next: ]()  
 [More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators)  
