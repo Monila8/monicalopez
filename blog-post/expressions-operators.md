@@ -30,7 +30,7 @@ Distinguish between binary and unary operators in JavaScript. Binary operators, 
 ### Special ternary operator:
 Encounter the conditional operator, a special ternary operator. It involves three operands and serves as a concise way to write if-else statements in a single line. Uncover its utility in simplifying conditional expressions.
 
-## Assignment operators overview:
+## Assignment operators
 This section delves into the realm of JavaScript assignment operators, crucial tools for manipulating variables. The primary assignment operator, '=', assigns the value of the right operand to the left operand. Shorthand versions, such as +=, -=, *=, and more, offer concise alternatives for common operations.
 
 ### Compound Assignment Operators:
@@ -93,7 +93,7 @@ console.log(var2 <= 5);        // true
 ## Numeric and string comparisons:
 Uncover the subtleties of numeric and string comparisons, where operators like > and < determine relationships between values. Explore how JavaScript navigates through scenarios involving numerical and lexicographical comparisons, offering insights into its underlying mechanisms.
 
-## Arithmetic operators:
+## Arithmetic operators
 Dive into the realm of JavaScript's arithmetic operators, essential tools that manipulate numerical values to produce singular numerical outcomes. These operators, whether applied to literals or variables, offer fundamental operations like addition, subtraction, multiplication, and division. Witness their behavior with floating-point numbers, where division by zero results in Infinity.
 
 ### Standard arithmetic operators:
@@ -139,7 +139,7 @@ console.log(10 ** -1);      // 0.1
 ### Mastering arithmetic dynamics:
 Delve into the nuanced dynamics of arithmetic operations in JavaScript. Gain proficiency in harnessing these operators for diverse scenarios, from basic mathematical calculations to complex numerical manipulations.
 
-## Bitwise operators:
+## Bitwise operators
 Embark on a journey into the binary universe as JavaScript's bitwise operators take center stage. Unlike traditional numerical operations, bitwise operators treat their operands as 32-bit binary entities, unlocking a new dimension of numerical manipulation. Dive into this realm of zeros and ones, where binary representations pave the way for intriguing bitwise operations.
 
 ### Bitwise operators overview:
@@ -188,7 +188,7 @@ console.log(num >>> 2); // 2 (Zero-fill right shift)
 ### Mastering the binary terrain:
 Gain mastery over the binary terrain as you grasp the intricacies of JavaScript's bitwise operators. Witness how these operators open up new possibilities for numerical manipulation and delve into scenarios where binary logic shines.
 
-## Logical operators:
+## Logical operators
 Logical operators in JavaScript are powerful tools primarily used with Boolean values. However, their versatility extends beyond Booleans, as they can return non-Boolean values. This exploration will dissect the logical AND (&&), logical OR (||), and logical NOT (!) operators, unraveling their behavior with illustrative examples.
 
 ### Logical AND (&&) operator:
@@ -239,7 +239,7 @@ This ensures correctness while avoiding unnecessary evaluations.
 Modern Alternative: Nullish Coalescing Operator (??):
 For scenarios involving defaults where values like '' or 0 are valid, the Nullish coalescing operator (??) serves as a superior alternative to ||.
 
-## BigInt operators:
+## BigInt operators
 In the vast realm of JavaScript, BigInt operators wield immense power, enabling precise operations on large integer values. This exploration unveils the secrets of BigInt addition, division, and bitwise operations, shedding light on their nuances.
 
 ### BigInt addition:
@@ -293,6 +293,87 @@ const a = 1n > 2;  // false
 const b = 3 > 2n;  // true
 ```
 
+## String operators
+In addition to the comparison operators, which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings.
+
+For example,
+
+```javascript
+console.log("my " + "string"); // console logs the string "my string".
+```
+
+The shorthand assignment operator += can also be used to concatenate strings.
+
+For example,
+
+```javascript
+let mystring = "alpha";
+mystring += "bet"; // evaluates to "alphabet" and assigns this value to mystring.
+```
+
+## Conditional (ternary) operator
+The conditional operator is the only JavaScript operator that takes three operands. The operator can have one of two values based on a condition. The syntax is:
+
+```javascript
+condition ? val1 : val2
+```
+
+If condition is true, the operator has the value of val1. Otherwise it has the value of val2. You can use the conditional operator anywhere you would use a standard operator.
+
+For example,
+
+```javascript
+const status = age >= 18 ? "adult" : "minor";
+```
+
+This statement assigns the value "adult" to the variable status if age is eighteen or more. Otherwise, it assigns the value "minor" to status.
+
+## Comma operator
+The comma operator (,) evaluates both of its operands and returns the value of the last operand. This operator is primarily used inside a for loop, to allow multiple variables to be updated each time through the loop. It is regarded bad style to use it elsewhere, when it is not necessary. Often two separate statements can and should be used instead.
+
+For example, if a is a 2-dimensional array with 10 elements on a side, the following code uses the comma operator to update two variables at once. The code prints the values of the diagonal elements in the array:
+
+```javascript
+const x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const a = [x, x, x, x, x];
+
+for (let i = 0, j = 9; i <= j; i++, j--) {
+  //                              ^
+  console.log(`a[${i}][${j}]= ${a[i][j]}`);
+}
+```
+
+## Unary operators
+Unary Operators: Solo Performances
+
+## Delete operator:
+The delete operator gracefully removes an object's property, with a nuanced dance of success and failure.
+
+```javascript
+delete Math.PI; // Returns false (cannot delete non-configurable properties)
+
+const myObj = { h: 4 };
+delete myObj.h; // Returns true (can delete user-defined properties)
+```
+
+## Typeof operator:
+The typeof operator unveils the identity of variables, keywords, and objects, a linguistic oracle in the world of types.
+
+```javascript
+typeof myFun; // Returns "function"
+typeof shape; // Returns "string"
+typeof size; // Returns "number"
+typeof foo; // Returns "object"
+typeof today; // Returns "object"
+typeof doesntExist; // Returns "undefined"
+```
+
+## Void operator:
+The void operator, a whisper in the void, evaluates expressions without returning a value, a silent yet intentional act.
+
+```javascript
+void expression;
+```
 
 [Previous: Functions](functions)  
 [Next: ]()  
