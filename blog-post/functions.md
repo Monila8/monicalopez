@@ -120,5 +120,5 @@ console.log(arr); // [2, 4, 6]
 ```
 
 [Previous: Loops](loops)  
-[Next: ]()  
+[Next: Expressions and operators](expressions-operators)  
 [More information: MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)   

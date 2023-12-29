@@ -51,12 +51,6 @@ export default function BlogIndex() {
           </ListGroup.Item>
           <ListGroup.Item
             action
-            href="/blog/objects"
-            className="index__listGroup-item">
-            Objects
-          </ListGroup.Item>
-          <ListGroup.Item
-            action
             href="/blog/loops"
             className="index__listGroup-item">
             Loops
@@ -67,7 +61,14 @@ export default function BlogIndex() {
             className="index__listGroup-item">
             Functions
           </ListGroup.Item>
+          <ListGroup.Item
+            action
+            href="/blog/objects"
+            className="index__listGroup-item">
+            Expressions and operators
+          </ListGroup.Item>
         </ListGroup>
+
         <div className="index__article">
           <br />
           <h1 className="index__article-title">Introduction</h1>
